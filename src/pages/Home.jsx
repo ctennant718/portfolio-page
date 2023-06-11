@@ -2,6 +2,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Intro from "../components/Intro";
+import Skills from "../components/Skills";
 import "../styles/main.css";
 
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
     <>
       <Header />
       <Intro />
+      <Skills />
     </>
   );
 }

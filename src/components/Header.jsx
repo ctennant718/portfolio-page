@@ -4,6 +4,7 @@ import React from "react";
 import githubLogo from "../images/github.png";
 import linkedInLogo from "../images/linkedin.png"
 import emailLogo from "../images/envelope-solid.png"
+import charlotteLogo from "../images/charlotte-logo.png"
 //styles
 import "../styles/main.css"
 
@@ -12,7 +13,7 @@ function Header() {
     <>
       <header className="header-wrapper">
         <div className="personal-logo-wrapper">
-          <p>LOGO GOES HERE</p>
+        <img src={charlotteLogo} className="personal-logo" />
         </div>
         <nav className="nav-wrapper">
           <a aria-labelledby="github-link" href="https://github.com/ctennant718">

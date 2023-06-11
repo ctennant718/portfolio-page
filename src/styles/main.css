@@ -10,7 +10,7 @@ monitor-breakpoint: 1280px; */
 
 body {
   background-color: var(--main-bg-color);
-  font-family: monospace;
+  font-family: "Albert Sans", sans-serif;
 }
 
 a {
@@ -18,31 +18,25 @@ a {
   color: hsl(0, 0%, 0%);
 }
 
+h1 {
+  font-family: "Gluten", cursive;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: "Gluten", cursive;
+}
+
+/* Header component */
+
 .header-wrapper {
   display: flex;
   justify-content: space-between;
   padding-inline: 1em;
   padding-block-start: 0.5em;
   padding-block-end: 1.5em;
-}
-
-@media (min-width: 768px) {
-  .header-wrapper {
-    padding-block-start: 1em;
-    margin-block-end: 2em;
-  }
-}
-
-@media (min-width: 1024px) {
-  .header-wrapper {
-    padding-inline: 3em;
-  }
-}
-
-@media (min-width: 1280px) {
-  .header-wrapper {
-    padding-inline: 15em;
-  }
+  height: 3em;
+  background-color: hsl(10, 100%, 81%);
 }
 
 .nav-logo {
@@ -50,18 +44,43 @@ a {
   margin-inline-end: 1em;
 }
 
+.personal-logo {
+  height: 4em;
+  width: 4em;
+}
+
 @media (min-width: 768px) {
+  .header-wrapper {
+    padding-block-start: 1em;
+    margin-block-end: 2em;
+  }
   .nav-logo {
     width: 3em;
     margin-inline-end: 2em;
   }
+  .personal-logo {
+    height: 5em;
+    width: 5em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-wrapper {
+    padding-inline: 3em;
+    margin-block-end: 5em;
+  }
 }
 
 @media (min-width: 1280px) {
+  .header-wrapper {
+    padding-inline: 15em;
+  }
   .nav-logo {
     width: 3.5em;
   }
 }
+
+/* Intro component */
 
 .intro-image-wrapper {
   display: flex;
@@ -77,6 +96,18 @@ a {
 @media (min-width: 768px) {
   .intro-image {
     width: 12em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro-image {
+    width: 20em;
+    margin-inline-end: 3em;
+  }
+
+  .intro-section {
+    display: flex;
+    flex-direction: row-reverse;
   }
 }
 
@@ -96,23 +127,59 @@ a {
   }
 }
 
+@media (min-width: 1024px) {
+  .intro-text-wrapper {
+    padding-inline-start: 7em;
+  }
+  .intro-text {
+    margin-inline-end: 6em;
+  }
+}
+
 .intro-text {
   font-size: 1.5rem;
 }
-
 
 .intro-headline {
   font-size: 2.5rem;
 }
 
 .intro-links-wrapper {
+  margin-block-start: 2em;
   font-size: 1.2rem;
 }
 
+.intro-link-individual {
+  width: 12em;
+  height: 1em;
+  padding: 1em;
+  background-color: hsl(10, 100%, 81%);
+  cursor: pointer;
+  position: relative;
+  bottom: 0px;
+  right: 0px;
+  box-shadow: 8px 8px 0px hsl(10, 100%, 72%);
+  text-align: center;
+  transition: all 0.25s;
+  border-radius: 10%;
+}
+
 .intro-link-individual:hover {
-  text-decoration: underline;
+  bottom: -4px;
+  right: -4px;
+  box-shadow: 4px 4px 0px hsl(10, 100%, 72%);
 }
 
 .intro-link-individual:focus {
-  text-decoration: underline;
+  bottom: -7px;
+  right: -7px;
+  box-shadow: 1px 1px 0px hsl(10, 100%, 72%);
+}
+
+.git-hub-link {
+  margin-inline-end: 1em;
+}
+
+.linked-in-link {
+  margin-inline-end: 1em;
 }

@@ -15,7 +15,7 @@ function Intro() {
         </div>
         <div className="intro-text-wrapper">
           <h1 className="intro-headline">
-            Hi! My name is Charlotte
+            Hi! I&apos;m Charlotte
           </h1>
           <p className="intro-text">
             I am software engineer specialising in JavaScript, React and Node.
@@ -29,14 +29,13 @@ function Intro() {
               className="intro-link"
               href="https://www.linkedin.com/in/charlotte-tennant-141b37274/"
             >
-              &#x2022; <span className="intro-link-individual">LinkedIn</span>{" "}
-              &#x2022;{" "}
+            <span className="intro-link-individual linked-in-link">LinkedIn</span>
             </a>
             <a className="intro-link" href="https://github.com/ctennant718">
-              <span className="intro-link-individual">GitHub</span> &#x2022;{" "}
+              <span className="intro-link-individual git-hub-link">GitHub</span>
             </a>
             <a className="intro-link" href="">
-              <span className="intro-link-individual">CV</span> &#x2022;
+              <span className="intro-link-individual cv-link">CV</span>
             </a>
           </div>
         </div>
