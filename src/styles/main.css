@@ -35,8 +35,6 @@ h2 {
   padding-inline: 1em;
   padding-block-start: 0.5em;
   padding-block-end: 1.5em;
-  height: 3em;
-  background-color: hsl(10, 100%, 81%);
 }
 
 .nav-logo {
@@ -81,6 +79,9 @@ h2 {
 }
 
 /* Intro component */
+.intro-section {
+  margin-block-end: 5em;
+}
 
 .intro-image-wrapper {
   display: flex;
@@ -93,6 +94,10 @@ h2 {
   filter: drop-shadow(0 0 0.75rem hsl(0, 0%, 50%, 12));
 }
 
+.intro-image-laptop {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .intro-image {
     width: 12em;
@@ -101,14 +106,20 @@ h2 {
 
 @media (min-width: 1024px) {
   .intro-image {
-    width: 20em;
-    margin-inline-end: 3em;
+    display: none;
+  }
+
+  .intro-image-laptop {
+    display: block;
+    width: 18em;
+    margin-inline-end: 7em;
   }
 
   .intro-section {
     display: flex;
     flex-direction: row-reverse;
   }
+
 }
 
 .intro-text-wrapper {
@@ -182,4 +193,70 @@ h2 {
 
 .linked-in-link {
   margin-inline-end: 1em;
+}
+
+/* project card component */
+
+.project-cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card-container {
+  background-color: hsl(0, 0%, 100%);
+  height: 30em;
+  width: 23em;
+  border-radius: 5%;
+  margin-block-end: 3em;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.project-image {
+  height: 14em;
+  width: 23em;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+.project-card-text {
+  margin-inline: 1em;
+}
+
+.project-github-logo {
+  width: 2.5em;
+}
+
+.githib-link-wrapper {
+  display: flex;
+  justify-content: start;
+  gap: 1em;
+}
+
+.card-github-button {
+  width: 8em;
+  height: 1em;
+  padding: 0.5em;
+  background-color: hsl(10, 100%, 81%);
+  cursor: pointer;
+  position: relative;
+  bottom: 0px;
+  right: 0px;
+  box-shadow: 8px 8px 0px hsl(10, 100%, 72%);
+  text-align: center;
+  transition: all 0.25s;
+  border-radius: 5%;
+}
+
+.card-github-button:focus {
+  bottom: -7px;
+  right: -7px;
+  box-shadow: 1px 1px 0px hsl(10, 100%, 72%);
+}
+
+.card-github-button:hover {
+  bottom: -4px;
+  right: -4px;
+  box-shadow: 4px 4px 0px hsl(10, 100%, 72%);
 }
