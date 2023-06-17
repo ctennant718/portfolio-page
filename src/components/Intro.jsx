@@ -34,7 +34,7 @@ function Intro() {
             <a className="intro-link" href="https://github.com/ctennant718">
               <span className="intro-link-individual git-hub-link">GitHub</span>
             </a>
-            <a className="intro-link" href="">
+            <a className="intro-link" href="src/charlotte-tennant.pdf" download>
               <span className="intro-link-individual cv-link">CV</span>
             </a>
           </div>
