@@ -19,12 +19,12 @@ a {
 }
 
 h1 {
-  font-family: "Gluten", cursive;
+  font-family: 'Rubik', sans-serif;
 }
 
 h2 {
   font-size: 2rem;
-  font-family: "Gluten", cursive;
+  font-family: 'Rubik', sans-serif;
 }
 
 /* Header component */
@@ -189,6 +189,15 @@ h2 {
   box-shadow: 4px 4px 0px hsl(10, 100%, 72%);
 }
 
+/* footer component */
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 1em;
+  padding-block-start: 0.5em;
+}
+
 /* media queries */
 
 @media (min-width: 500px) and (max-width: 768px) {
@@ -246,6 +255,9 @@ h2 {
     grid-template-rows: repeat(5, 1fr);
     justify-items: center;
   }
+  .footer-wrapper {
+    padding-inline: 1.5em;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -276,7 +288,11 @@ h2 {
   .project-cards-wrapper {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    margin-inline: 2em;
+    margin-inline: 4em;
+  }
+
+  .footer-wrapper {
+    padding-inline: 2.5em;
   }
 }
 

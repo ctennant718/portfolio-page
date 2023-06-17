@@ -4,19 +4,20 @@ import React from "react";
 import Header from "../components/Header";
 import Intro from "../components/Intro";
 import ProjectCard from "../components/ProjectCard";
+import Footer from "../components/Footer";
 //styles
 import "../styles/main.css";
 //images
 import shopfrontImage from "../images/shopfront-project.jpeg";
-import hangman from "../images/hangman.png";
 import hangmanImage from "../images/hangman-project.png";
 import guideDogsImage from "../images/guide-dogs-project.png";
 import fourCardImage from "../images/four-card-project.png";
 import animalCrossingImage from "../images/animal-crossing-project.png";
 import chocolateImage from "../images/chocolate-project.png";
-import portfolioPageImage from "../images/portfolio-page.png"
-import firebaseImage from "../images/firebase-project.png"
-import apiImage from "../images/api-project.png"
+import portfolioPageImage from "../images/portfolio-page.png";
+import firebaseImage from "../images/firebase-project.png";
+import apiImage from "../images/api-project.png";
+import snakeImage from "../images/snake-project.png";
 
 function Home() {
   return (
@@ -28,7 +29,7 @@ function Home() {
           projectTitle="Go Outdoors!"
           projectImage={shopfrontImage}
           projectUrl="https://nextjs-shopfront-project.vercel.app/"
-          projectDescription="This full-stack app is perfect for all your hiking needs. Built using Next.js, React, MongoDB, TanStack Query, GraphQL and with Auth0 for authenticaiton. The perfect representation of everything I've learnt."
+          projectDescription="This full-stack app is perfect for all your hiking needs. Built using Next.js, React, MongoDB, TanStack Query, GraphQL and with Auth0 for authenticaiton."
           gitHubUrl="https://github.com/ctennant718/nextjs-shopfront-project"
         />
         <ProjectCard
@@ -40,23 +41,23 @@ function Home() {
         />
         <ProjectCard
           projectTitle="A 90s classic!"
-          projectImage={hangman}
+          projectImage={snakeImage}
           projectUrl="https://tiny-cobbler-2aa020.netlify.app/"
-          projectDescription="Try your luck at this classic snake game. Built using JavaScript, I made use of local storage so the player's high score is saved."
+          projectDescription="Try your luck at this classic snake game. Built using JavaScript, I made use of local storage so the player's high score is saved after each play through."
           gitHubUrl="https://github.com/ctennant718/snake-javascript"
         />
         <ProjectCard
           projectTitle="Guide Dogs homage"
           projectImage={guideDogsImage}
           projectUrl="https://meek-sunshine-1acdae.netlify.app/"
-          projectDescription="A homage to the Guide Dogs website whose wonderful work I have been lucky enough to see first hand. Built using semantically valid and accessible HTML, and SCSS."
+          projectDescription="A recreation of the Guide Dogs website, whose wonderful work I have been lucky enough to see in action. Built using semantically-valid HTML and SCSS."
           gitHubUrl="https://github.com/ctennant718/guide-dogs-homage"
         />
         <ProjectCard
           projectTitle="Cats vs Dogs"
           projectImage={firebaseImage}
           projectUrl="https://lambent-kelpie-2c9984.netlify.app/"
-          projectDescription="Vote on the ultimate question: are you a cat or a dog person? Realtime updates, created using JavaScript and Firebase (particularly Firestore)."
+          projectDescription="Vote on the ultimate question: are you a cat or a dog person? Realtime updates, created using JavaScript, D3.js and and the database Cloud Firestore."
           gitHubUrl="https://github.com/ctennant718/firebase-cats-dogs"
         />
         <ProjectCard
@@ -70,21 +71,21 @@ function Home() {
           projectTitle="My island"
           projectImage={animalCrossingImage}
           projectUrl="https://peppy-duckanoo-6f0e22.netlify.app/"
-          projectDescription="Experimenting with the Animal Crossing REST API to display the villagers I have on my island. Who is your favourite? "
+          projectDescription="Experimenting with the Animal Crossing REST API to display the villagers I have on my island using JavaScript. Who is your favourite? "
           gitHubUrl="https://github.com/ctennant718/animal-crossing-api"
         />
         <ProjectCard
           projectTitle="Good dog"
           projectImage={apiImage}
-          projectUrl="#"
+          projectUrl="https://github.com/ctennant718/dogs-api"
           projectDescription="An API of good boys built using Node, Express and MongoDB/Mongoose. Check out the Github repo below!"
           gitHubUrl="https://github.com/ctennant718/dogs-api"
         />
         <ProjectCard
           projectTitle="Portfolio page"
           projectImage={portfolioPageImage}
-          projectUrl=""
-          projectDescription="This page was built using React, with React Router. I was also keen to practice my CSS skills instead of using a framework."
+          projectUrl="https://github.com/ctennant718/portfolio-page"
+          projectDescription="This portfolio page was built using React, with React Router. I was also keen to practice my CSS skills instead of using a framework. implementing both Flexbox and Grid."
           gitHubUrl="https://github.com/ctennant718/portfolio-page"
         />
         <ProjectCard
@@ -95,6 +96,7 @@ function Home() {
           gitHubUrl="https://github.com/ctennant718/chart-js-chocolate"
         />
       </div>
+      <Footer />
     </>
   );
 }
