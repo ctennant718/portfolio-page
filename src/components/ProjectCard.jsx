@@ -12,9 +12,11 @@ function ProjectCard({
   return (
     <>
       <div className="project-card-container">
-        <img src={projectImage} className="project-image" />
+        <a href={projectUrl}>
+          <img src={projectImage} className="project-image" />
+        </a>
         <div className="project-card-text">
-          <a href={projectUrl}>
+          <a href={projectUrl} className="project-title-link">
             <h2 className="project-title">{projectTitle}</h2>
           </a>
           <p className="project description">{projectDescription}</p>
@@ -27,7 +29,7 @@ function ProjectCard({
               />
             </a>
             <a href={gitHubUrl} className="card-github-button">
-              <span>Github repo</span>
+              <span>GitHub repo</span>
             </a>
           </div>
         </div>

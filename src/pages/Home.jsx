@@ -15,6 +15,8 @@ import fourCardImage from "../images/four-card-project.png";
 import animalCrossingImage from "../images/animal-crossing-project.png";
 import chocolateImage from "../images/chocolate-project.png";
 import portfolioPageImage from "../images/portfolio-page.png"
+import firebaseImage from "../images/firebase-project.png"
+import apiImage from "../images/api-project.png"
 
 function Home() {
   return (
@@ -52,7 +54,7 @@ function Home() {
         />
         <ProjectCard
           projectTitle="Cats vs Dogs"
-          projectImage={hangman}
+          projectImage={firebaseImage}
           projectUrl="https://lambent-kelpie-2c9984.netlify.app/"
           projectDescription="Vote on the ultimate question: are you a cat or a dog person? Realtime updates, created using JavaScript and Firebase (particularly Firestore)."
           gitHubUrl="https://github.com/ctennant718/firebase-cats-dogs"
@@ -73,7 +75,7 @@ function Home() {
         />
         <ProjectCard
           projectTitle="Good dog"
-          projectImage={hangman}
+          projectImage={apiImage}
           projectUrl="#"
           projectDescription="An API of good boys built using Node, Express and MongoDB/Mongoose. Check out the Github repo below!"
           gitHubUrl="https://github.com/ctennant718/dogs-api"
