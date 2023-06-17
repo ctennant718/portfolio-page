@@ -1,7 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import Charlotte from "../images/charlotte-image.jpeg";
-import croppedCharlotte from "../images/charlotte-laptop-size.png";
 
 function Intro() {
   return (
@@ -13,16 +12,11 @@ function Intro() {
               src={Charlotte}
               alt="Charlotte has shoulder-length brown hair and wears glasses. She is smiling for the camera."
             />
-            <img
-              className="intro-image-laptop"
-              src={croppedCharlotte}
-              alt="Charlotte has shoulder-length brown hair and wears glasses. She is smiling for the camera."
-            />
           </div>
           <div className="intro-text-wrapper">
             <h1 className="intro-headline">Hi! I&apos;m Charlotte</h1>
             <p className="intro-text">
-              I am software engineer specialising in JavaScript, React and Node.
+              I am a software engineer specialising in JavaScript, React and Node.
             </p>
             <p className="intro-text">
               I couple this with proven project management and communication

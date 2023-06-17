@@ -6,6 +6,9 @@ monitor-breakpoint: 1280px; */
   --main-bg-color: hsl(141, 100%, 93%);
   --secondary-color: hsl(263, 44%, 79%, 50%);
   --font-color: hsl(0, 0%, 0%);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -19,12 +22,12 @@ a {
 }
 
 h1 {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 h2 {
   font-size: 2rem;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 /* Header component */
@@ -43,8 +46,9 @@ h2 {
 }
 
 .personal-logo {
-  height: 4em;
-  width: 4em;
+  padding-block-start: 0.5em;
+  height: 2.25em;
+  width: 12em;
 }
 
 /* Intro component */
@@ -58,13 +62,10 @@ h2 {
 }
 
 .intro-image {
-  border-radius: 100%;
+  border-radius: 50%;
   width: 10em;
-  filter: drop-shadow(0 0 0.75rem hsl(0, 0%, 50%, 12));
-}
-
-.intro-image-laptop {
-  display: none;
+  /* filter: drop-shadow(0 0 0.75rem hsl(0, 0%, 50%, 12)); */
+  border: 6px solid hsl(10, 100%, 72%);
 }
 
 .intro-text-wrapper {
@@ -216,8 +217,7 @@ h2 {
     margin-inline-end: 2em;
   }
   .personal-logo {
-    height: 5em;
-    width: 5em;
+    padding-block-start: 0.75em;
   }
   .intro-image {
     width: 12em;
@@ -230,11 +230,11 @@ h2 {
 @media (min-width: 1024px) {
   .header-wrapper {
     padding-inline: 3em;
-    margin-block-end: 5em;
+    margin-block-end: 2em;
   }
 
   .intro-image {
-    width: 100%;
+    width: 20em;
     margin-inline-end: 7em;
   }
 
@@ -267,19 +267,20 @@ h2 {
   .nav-logo {
     width: 3.5em;
   }
+
+  .personal-logo {
+    width: 12em;
+  }
   .intro-section {
-    margin-block-end: 9em;
+    margin-block-end: 7em;
   }
 
   .intro-image {
-    display: none;
-  }
-  .intro-image-laptop {
-    display: block;
-    width: 25em;
+    width: 20em;
+    margin-block-start: 2em;
     margin-inline-end: 14em;
-    margin-block-start: 1em;
   }
+
   .intro-text-wrapper {
     padding: 0;
     margin-inline-start: 14em;

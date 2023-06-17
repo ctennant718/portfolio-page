@@ -47,12 +47,13 @@ function Home() {
           gitHubUrl="https://github.com/ctennant718/snake-javascript"
         />
         <ProjectCard
-          projectTitle="Guide Dogs homage"
-          projectImage={guideDogsImage}
-          projectUrl="https://meek-sunshine-1acdae.netlify.app/"
-          projectDescription="A recreation of the Guide Dogs website, whose wonderful work I have been lucky enough to see in action. Built using semantically-valid HTML and SCSS."
-          gitHubUrl="https://github.com/ctennant718/guide-dogs-homage"
+          projectTitle="My island"
+          projectImage={animalCrossingImage}
+          projectUrl="https://peppy-duckanoo-6f0e22.netlify.app/"
+          projectDescription="Experimenting with the Animal Crossing REST API to display the villagers I have on my island using JavaScript. Who is your favourite? "
+          gitHubUrl="https://github.com/ctennant718/animal-crossing-api"
         />
+
         <ProjectCard
           projectTitle="Cats vs Dogs"
           projectImage={firebaseImage}
@@ -61,26 +62,27 @@ function Home() {
           gitHubUrl="https://github.com/ctennant718/firebase-cats-dogs"
         />
         <ProjectCard
-          projectTitle="Four-card feature"
-          projectImage={fourCardImage}
-          projectUrl="https://harmonious-snickerdoodle-0c5d6e.netlify.app/"
-          projectDescription="Created by following Figma design files, this responsive design was built from a challenge set by the amazing resource Frontend Mentor."
-          gitHubUrl="https://github.com/ctennant718/four-card-feature"
-        />
-        <ProjectCard
-          projectTitle="My island"
-          projectImage={animalCrossingImage}
-          projectUrl="https://peppy-duckanoo-6f0e22.netlify.app/"
-          projectDescription="Experimenting with the Animal Crossing REST API to display the villagers I have on my island using JavaScript. Who is your favourite? "
-          gitHubUrl="https://github.com/ctennant718/animal-crossing-api"
-        />
-        <ProjectCard
           projectTitle="Good dog"
           projectImage={apiImage}
           projectUrl="https://github.com/ctennant718/dogs-api"
           projectDescription="An API of good boys built using Node, Express and MongoDB/Mongoose. Check out the Github repo below!"
           gitHubUrl="https://github.com/ctennant718/dogs-api"
         />
+        <ProjectCard
+          projectTitle="Guide Dogs homage"
+          projectImage={guideDogsImage}
+          projectUrl="https://meek-sunshine-1acdae.netlify.app/"
+          projectDescription="A recreation of the Guide Dogs website, whose wonderful work I have been lucky enough to see in action. Built using semantically-valid HTML and SCSS."
+          gitHubUrl="https://github.com/ctennant718/guide-dogs-homage"
+        />
+        <ProjectCard
+          projectTitle="Four-card feature"
+          projectImage={fourCardImage}
+          projectUrl="https://harmonious-snickerdoodle-0c5d6e.netlify.app/"
+          projectDescription="Created by following Figma design files, this responsive design was built from a challenge set by the amazing resource Frontend Mentor."
+          gitHubUrl="https://github.com/ctennant718/four-card-feature"
+        />
+
         <ProjectCard
           projectTitle="Portfolio page"
           projectImage={portfolioPageImage}
