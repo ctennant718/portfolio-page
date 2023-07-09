@@ -18,6 +18,7 @@ import portfolioPageImage from "../images/portfolio-page.png";
 import firebaseImage from "../images/firebase-project.png";
 import apiImage from "../images/api-project.png";
 import snakeImage from "../images/snake-project.png";
+import reactAppImage from "../images/react-app.png"
 
 function Home() {
   return (
@@ -47,19 +48,25 @@ function Home() {
           gitHubUrl="https://github.com/ctennant718/snake-javascript"
         />
         <ProjectCard
-          projectTitle="My island"
-          projectImage={animalCrossingImage}
-          projectUrl="https://peppy-duckanoo-6f0e22.netlify.app/"
-          projectDescription="Experimenting with the Animal Crossing REST API to display the villagers I have on my island using JavaScript. Who is your favourite? "
-          gitHubUrl="https://github.com/ctennant718/animal-crossing-api"
+          projectTitle="Start your engines!"
+          projectImage={reactAppImage}
+          projectUrl="https://drivers-react-app.vercel.app/"
+          projectDescription="A React app that consumes data from a REST API, and allows the user to perform CRUD methods. Includes a form created with React Hook form, validation with Yup and theming using MUI."
+          gitHubUrl="https://github.com/ctennant718/drivers-react-app"
         />
-
         <ProjectCard
           projectTitle="Cats vs Dogs"
           projectImage={firebaseImage}
           projectUrl="https://lambent-kelpie-2c9984.netlify.app/"
           projectDescription="Vote on the ultimate question: are you a cat or a dog person? Realtime updates, created using JavaScript, D3.js and and the database Cloud Firestore."
           gitHubUrl="https://github.com/ctennant718/firebase-cats-dogs"
+        />
+        <ProjectCard
+          projectTitle="My island"
+          projectImage={animalCrossingImage}
+          projectUrl="https://peppy-duckanoo-6f0e22.netlify.app/"
+          projectDescription="Experimenting with the Animal Crossing REST API to display the villagers I have on my island using JavaScript. Who is your favourite? "
+          gitHubUrl="https://github.com/ctennant718/animal-crossing-api"
         />
         <ProjectCard
           projectTitle="Good dog"
